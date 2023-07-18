@@ -5,6 +5,7 @@ import App from "./app.jsx";
 import { BrowserRouter } from "react-router-dom";
 
 import "../css/app.css";
+import "@silevis/reactgrid/styles.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
