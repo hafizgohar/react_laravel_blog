@@ -10,7 +10,7 @@ const Posts = () => {
 
     const fetchPosts = async () => {
         try {
-            const response = axios.get("http://localhost:8000/api/getPost");
+            const response = axios.get(`http://localhost:8000/api/getPost`);
             console.log(response.data);
             setPosts((await response).data.posts);
         } catch ({ response }) {
