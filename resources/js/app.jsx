@@ -7,6 +7,7 @@ import Home from "./pages/Home.jsx";
 import Posts from "./pages/Posts";
 import PostPage from "./pages/PostPage";
 import GridTable from "./pages/GridTable";
+import Table from "./pages/tables/Table";
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path="/posts" element={<Posts />} />
                 <Route path="/posts/:id" element={<PostPage />} />
                 <Route path="/gridtable" element={<GridTable />} />
+                <Route path="/practiceTable" element={<Table />} />
             </Routes>
         </>
     );
