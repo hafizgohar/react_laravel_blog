@@ -8,6 +8,7 @@ import Posts from "./pages/Posts";
 import PostPage from "./pages/PostPage";
 import GridTable from "./pages/GridTable";
 import Table from "./pages/tables/Table";
+import NewTable from "./pages/handsontable/NewTable";
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path="/posts/:id" element={<PostPage />} />
                 <Route path="/gridtable" element={<GridTable />} />
                 <Route path="/practiceTable" element={<Table />} />
+                <Route path="/newTable" element={<NewTable />} />
             </Routes>
         </>
     );

@@ -22,9 +22,8 @@ export const rows = (reorderable) => [
                 type: "chevron",
                 text: "",
                 isExpanded: true,
-                id: 1.1,
             },
-            { type: "text", text: "", nonEditable: true, id: 1.2 },
+            { type: "text", text: "" },
         ],
     },
     {
@@ -51,7 +50,11 @@ export const rows = (reorderable) => [
         height,
         reorderable,
         cells: [
-            { type: "chevron", text: "3", isExpanded: false },
+            {
+                type: "chevron",
+                text: "3",
+                isExpanded: false,
+            },
             { type: "text", text: "u61x66unzgl9xd5gre3bj7g8za8cb7ve4t7otz0e" },
         ],
     },
@@ -60,7 +63,12 @@ export const rows = (reorderable) => [
         height,
         reorderable,
         cells: [
-            { type: "chevron", text: "4", isExpanded: true, parentId: 3 },
+            {
+                type: "chevron",
+                text: "4",
+                isExpanded: true,
+                parentId: 3,
+            },
             { type: "text", text: "v2dwm51y0k874x596axt4uz1if5qcv7etavg76va" },
         ],
     },
@@ -69,7 +77,13 @@ export const rows = (reorderable) => [
         height,
         reorderable,
         cells: [
-            { type: "chevron", text: "5", isExpanded: true, parentId: 4 },
+            {
+                type: "chevron",
+                text: "5",
+                isExpanded: true,
+                parentId: 4,
+                nonEditable: true,
+            },
             { type: "text", text: "jqk6nn3wktt2nwituttafuvpv7hlzo2grelvs7vo" },
         ],
     },
@@ -78,7 +92,12 @@ export const rows = (reorderable) => [
         height,
         reorderable,
         cells: [
-            { type: "chevron", text: "6", isExpanded: true, parentId: 4 },
+            {
+                type: "chevron",
+                text: "6",
+                isExpanded: true,
+                parentId: 4,
+            },
             { type: "text", text: "ppsqily4doxz27uw6tznvc3qfvfhc37500k59jw9" },
         ],
     },
@@ -122,8 +141,13 @@ export const rows = (reorderable) => [
         rowId: 11,
         height,
         reorderable,
+
         cells: [
-            { type: "chevron", text: "11", isExpanded: true },
+            {
+                type: "chevron",
+                text: "11",
+                isExpanded: false,
+            },
             { type: "text", text: "fvgiizz61ysmiv2gn9por6izio575u557jyxz4xs" },
         ],
     },
